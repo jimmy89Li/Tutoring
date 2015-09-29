@@ -10,7 +10,6 @@
 <div class="container">
 <header>
 <div class="slider"></div>
-<div class="menubar">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,7 +45,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-</div>
 </header>
 
 </div>
