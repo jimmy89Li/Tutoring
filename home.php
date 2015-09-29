@@ -20,7 +20,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Username</a>
+      <a class="navbar-brand" href="#">
+      <ul class="nav navbar-nav navbar">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">User Profile</a></li>
+				<li><a href="#">Logout</a></li>
+			  </ul>
+			</li>
+		</ul>
+	  </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,7 +57,11 @@
 </nav>
 </header>
 
-</div>
+<div class="sidebar">
+
+</div><!--Sidebar-->
+
+</div><!--Container-->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
