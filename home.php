@@ -89,6 +89,11 @@
 </div>
 
 </section><!--Main Section-->
+<footer class="footer">
+	<div class="footerContainer">
+		<p>2015 | Tutoring Portal</p>
+	</div>
+</foter>
 </div><!--Container-->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
