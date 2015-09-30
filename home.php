@@ -4,6 +4,7 @@
 <title>Tutoring Portal</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet" />
+<link rel="icon" type="image/png" href="img/favicon.png" />
 <meta charset="UTF-8">
 </head>
 <body>
@@ -23,6 +24,9 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar">
+					<a href="#">
+						<img class="logo" src="img/logo-trans.png" alt="logo" />
+					</a>
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
 					  <ul class="dropdown-menu">
