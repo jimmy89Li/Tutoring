@@ -1,4 +1,4 @@
-html,body{margin:0;padding:0}
+html,body{margin:0;padding:0;min-width:1032px;}
 .container{
 	margin:0;
 	padding:0;
@@ -21,6 +21,7 @@ header{
 }
 .navbar{
 	border-radius:0;
+	z-index:99;
 }
 .affix {
       top: 0;
@@ -31,13 +32,16 @@ header{
   .affix + .container-fluid {
       padding-top: 10px;
   }
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin: 0 15%;
+.container-fluid>.navbar-header, .container>.navbar-header{
+	margin-left:15%;
+}
+.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+    margin-right:15%;
 }
 .mainSection {
     height: auto;
     margin: 60px 15% 0;
-    min-height: 720px;
+    min-height: 620px;
 }
 .mainContent{
 	
