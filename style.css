@@ -7,15 +7,20 @@ html,body{margin:0;padding:0;}
 	min-height:720px;
 }
 .slider{
-	height:280px;
-	background: url(img/banner1.png) no-repeat center; 
+	height:360px;
+	background: url(img/banner3v3.png) no-repeat center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; 
+	text-align:center;
 }
 .logo{
-	height:auto;
+	margin-top:25px;
+}
+.img-circle {
+    border-radius: 50%;
+    background-color: rgba(248, 248, 248, 0.5);
 }
 header{
 	width:100%;
@@ -25,7 +30,6 @@ header{
 .navbar{
 	border-radius:0;
 	z-index:99;
-	min-height:90px;
 }
 .navbar img{
 	height:80px;
@@ -38,9 +42,7 @@ header{
 .navbar-right{
 	margin-left:0;
 }
-.navbar ul li {
-	margin-top:20px;
-}
+
 .affix {
       top: 0;
       width: 100%;
@@ -55,12 +57,10 @@ header{
 .container-fluid>.navbar-collapse, .container>.navbar-collapse {
     margin-right:15%;
 }
-form.navbar-form.navbar-right {
-    margin-top: 30px;
-}
+
 .mainSection {
     height: auto;
-    margin: 120px 15% 0;
+    margin: 160px 15% 0;
     min-height: 620px;
 }
 .sidebar{
