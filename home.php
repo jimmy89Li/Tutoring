@@ -15,7 +15,7 @@
 			<img class="logo img-circle" src="img/logocirkel50.png" alt="logo" />
 		</a>
 </div>
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="290">
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="370">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
