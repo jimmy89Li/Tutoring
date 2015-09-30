@@ -141,15 +141,49 @@
   </div>
   <div class="col-xs-12 col-md-4 sidebar">
 		<div class="panel panel-default">
-			<div class="panel-heading">Latest offers</div>
+			<div class="panel-heading">Filter the workshops:</div>
 			<div class="panel-body">
-				<p>Lorem ipsum dolor sit amet, ornare lacus congue, laoreet accumsan luctus sed in amet, litora eget ut libero, cursus dui sit ultrices nibh aliquam quam, felis rutrum dolor in at vestibulum. Morbi lorem non scelerisque. Viverra sollicitudin quam id lectus, non semper aperiam odio id adipiscing, proin libero, mollis sed nunc vulputate purus in. Nibh non nulla, pretium aenean in ipsum neque placerat congue, eleifend ornare quia ut in eos libero. Volutpat eros, commodo erat quam elit, sit laoreet nibh eum velit. Nibh pellentesque, purus amet congue. Pede felis sed felis, platea proin sodales sodales. Aliquam laoreet beatae congue, sed nulla bibendum sit lorem vitae, nec interdum posuere amet viverra eros. Consequat phasellus magna purus molestie justo orci, donec nibh lacus felis egestas quam, eget ut vitae, in suspendisse, duis eget vestibulum porta eget suspendisse sed.</p>
-			</div>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">Latest requests</div>
-			<div class="panel-body">
-				<p>Lorem ipsum dolor sit amet, ornare lacus congue, laoreet accumsan luctus sed in amet, litora eget ut libero, cursus dui sit ultrices nibh aliquam quam, felis rutrum dolor in at vestibulum. Morbi lorem non scelerisque. Viverra sollicitudin quam id lectus, non semper aperiam odio id adipiscing, proin libero, mollis sed nunc vulputate purus in. Nibh non nulla, pretium aenean in ipsum neque placerat congue, eleifend ornare quia ut in eos libero. Volutpat eros, commodo erat quam elit, sit laoreet nibh eum velit. Nibh pellentesque, purus amet congue. Pede felis sed felis, platea proin sodales sodales. Aliquam laoreet beatae congue, sed nulla bibendum sit lorem vitae, nec interdum posuere amet viverra eros. Consequat phasellus magna purus molestie justo orci, donec nibh lacus felis egestas quam, eget ut vitae, in suspendisse, duis eget vestibulum porta eget suspendisse sed.</p>
+				<ul class="list-group">
+					<li class="list-group-item">Category:
+						<div class="checkbox">
+							<label>
+							  <input type="checkbox"> PHP
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							  <input type="checkbox"> HTML
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							  <input type="checkbox"> CSS
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							  <input type="checkbox"> JavaScript
+							</label>
+						</div>
+					</li>
+					<li class="list-group-item">Tutor:
+						<div class="radio">
+							<label><input type="radio" name="optradio">Ana</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">Bob</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">Charlie</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">Danny</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">Elena</label>
+						</div>
+					</li>					
+				</ul>
 			</div>
 		</div>
   </div>
