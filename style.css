@@ -1,8 +1,10 @@
 html,body{margin:0;padding:0}
 .container{
+	margin:0;
+	padding:0;
 	width:100%;
 	height:100%;
-	padding:0;
+	min-height:720px;
 }
 .slider{
 	height:280px;
@@ -20,11 +22,26 @@ header{
 .navbar{
 	border-radius:0;
 }
+.affix {
+      top: 0;
+      width: 100%;
+	  z-index: 99;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 10px;
+  }
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin: 0 15%;
+}
+.mainSection {
+    height: auto;
+    margin: 60px 15% 0;
+    min-height: 720px;
+}
+.mainContent{
+	
+}
 .sidebar{
-	position:absolute;
-	right:10px;
-	margin-top:65px;
-	min-height:560px;
-	min-width:300px;
-	border: 1px solid black;
+	min-height:520px;
 }

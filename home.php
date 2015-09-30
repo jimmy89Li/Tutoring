@@ -10,7 +10,7 @@
 <div class="container">
 <header>
 <div class="slider"></div>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="290">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -57,10 +57,10 @@
 </nav>
 </header>
 
-<div class="sidebar">
+<section class="mainSection">
 
-</div><!--Sidebar-->
 
+</section><!--Main Section-->
 </div><!--Container-->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
