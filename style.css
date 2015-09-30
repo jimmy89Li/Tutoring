@@ -1,4 +1,4 @@
-html,body{margin:0;padding:0;min-width:1032px;}
+html,body{margin:0;padding:0;}
 .container{
 	margin:0;
 	padding:0;
@@ -22,6 +22,12 @@ header{
 .navbar{
 	border-radius:0;
 	z-index:99;
+}
+.navbar-nav {
+	margin-left: 15%;
+}
+.navbar-right{
+	margin-left:0;
 }
 .affix {
       top: 0;
@@ -61,4 +67,35 @@ header{
 }
 .footerContainer p{
 	margin: 20px 0;
+}
+.row img{
+width:100%;
+height:auto;
+}
+
+@media (max-width: 1080px){
+.container-fluid>.navbar-header, .container>.navbar-header{
+	margin-left:5%;
+}
+.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+    margin-right:5%;
+}
+.navbar-nav {
+	margin-left:5%;
+}
+.navbar-right{
+	margin-left:0;
+}
+}
+
+@media (max-width: 860px){
+.container-fluid>.navbar-header, .container>.navbar-header{
+	margin-left:0;
+}
+.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+    margin-right:0;
+}
+.navbar-nav {
+	margin-left:0;
+}
 }
