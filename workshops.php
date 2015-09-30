@@ -44,7 +44,7 @@
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="home.php">Home</a></li>
-				<li><a href="workshops.php">Workshops</a></li>
+				<li><a href="workshops">Workshops</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -62,8 +62,38 @@
 <div class="row">
   <div class="col-xs-12 col-md-8">
 			<div class="panel panel-default">
-				<div class="panel-heading">The next 3 workshops are:</div>
+				<div class="panel-heading">All our upcoming workshops:</div>
 				<div class="panel-body">
+				<p>You can also add a workshop of your own: <button type="button" class="btn btn-default">Add workshop</button></p>
+				
+					<div class="row">
+						<div class="col-xs-4 col-md-5 col-lg-4">
+							<img src="img/placeholder.jpg" alt="Image" />
+						</div>
+						<div class="col-xs-8 col-md-7 col-lg-8">
+							<h3>PHP Introduction Workshop</h3>
+							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
+							<p>Location: MMD Building 8, Room 25</p>
+							<p>Category: PHP</p>
+							<p>Tutor: John Doe</p>
+							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</div>
+					</br>
+					<div class="row">
+						<div class="col-xs-4 col-md-5 col-lg-4">
+							<img src="img/placeholder.jpg" alt="Image" />
+						</div>
+						<div class="col-xs-8 col-md-7 col-lg-8">
+							<h3>PHP Introduction Workshop</h3>
+							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
+							<p>Location: MMD Building 8, Room 25</p>
+							<p>Category: PHP</p>
+							<p>Tutor: John Doe</p>
+							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</div>
+					</br>
 					<div class="row">
 						<div class="col-xs-4 col-md-5 col-lg-4">
 							<img src="img/placeholder.jpg" alt="Image" />
