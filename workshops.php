@@ -167,20 +167,20 @@
 						</div>
 					</li>
 					<li class="list-group-item">Tutor:
-						<div class="radio">
-							<label><input type="radio" name="optradio">Ana</label>
+						<div class="checkbox">
+							<label><input type="checkbox">Ana</label>
 						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Bob</label>
+						<div class="checkbox">
+							<label><input type="checkbox">Bob</label>
 						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Charlie</label>
+						<div class="checkbox">
+							<label><input type="checkbox">Charlie</label>
 						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Danny</label>
+						<div class="checkbox">
+							<label><input type="checkbox">Danny</label>
 						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Elena</label>
+						<div class="checkbox">
+							<label><input type="checkbox">Elena</label>
 						</div>
 					</li>					
 				</ul>
