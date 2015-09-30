@@ -58,7 +58,35 @@
 </header>
 
 <section class="mainSection">
-
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">Upcomming workshops</div>
+				<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Workshop #1</p>
+					<p>Workshop #2</p>
+					<p>Workshop #3</p>
+					<p>Workshop #4</p>
+					<p>Workshop #5</p>
+				</div>
+			</div>
+  </div>
+  <div class="col-xs-12 col-md-4 sidebar">
+		<div class="panel panel-default">
+			<div class="panel-heading">Latest offers</div>
+			<div class="panel-body">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Latest requests</div>
+			<div class="panel-body">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+  </div>
+</div>
 
 </section><!--Main Section-->
 </div><!--Container-->
