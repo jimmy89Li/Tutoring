@@ -1,4 +1,6 @@
-# Tutoring
-Tutoring Portal
-Edit edit
-test
+# Tutoring Portal
+Group members:
+- Eva
+- Liviu
+- Mathilde
+- Sanjog
