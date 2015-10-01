@@ -1,0 +1,136 @@
+html,body{margin:0;padding:0;}
+.container{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	min-height:720px;
+}
+.slider{
+	height:360px;
+	background: url(img/banner3v3.png) no-repeat center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	text-align:center;
+}
+.logo{
+	margin-top:25px;
+}
+.img-circle {
+    border-radius: 50%;
+    background-color: rgba(248, 248, 248, 0.5);
+}
+header{
+	width:100%;
+	height:280px;
+}
+.navbar{
+	border-radius:0;
+	z-index:99;
+}
+.navbar img{
+	height:80px;
+	float:left;
+	margin: 5px 0 0 30px;
+}
+.navbar-nav {
+	margin-left: 15%;
+}
+.navbar-right{
+	margin-left:0;
+}
+
+.affix {
+      top: 0;
+      width: 100%;
+	  z-index: 99;
+}
+.affix + .container-fluid {
+      padding-top: 10px;
+}
+.container-fluid>.navbar-header, .container>.navbar-header{
+	margin-left:15%;
+}
+.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+    margin-right:15%;
+}
+
+.mainSection {
+    height: auto;
+    margin: 160px 15% 0;
+    min-height: 620px;
+}
+.sidebar{
+	min-height:520px;
+}
+.usersidebar {
+	margin-top: 63px;
+}
+ul.left {
+	padding: 0;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
+.footerContainer{
+	width:auto;
+	margin: 0 15%;
+}
+.footerContainer p{
+	margin: 20px 0;
+}
+.row img{
+width:100%;
+height:auto;
+}
+.userimg {
+	max-width: 200px;
+}
+/* Workshop Creating Form */
+.modal-title {
+    text-align: center;
+}
+button.btn.btn-default.btn-lg {
+    background-color: #CCCCCC;
+    border-radius: 3px;
+    padding: 1px 10px;
+    border: 1px solid silver;
+}
+
+
+/* Media Queries */
+@media (max-width: 1080px){
+.container-fluid>.navbar-header, .container>.navbar-header{
+	margin-left:5%;
+}
+.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+    margin-right:5%;
+}
+.navbar-nav {
+	margin-left:5%;
+}
+.navbar-right{
+	margin-left:0;
+}
+}
+
+@media (max-width: 860px){
+.container-fluid>.navbar-header, .container>.navbar-header{
+	margin-left:0;
+}
+.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+    margin-right:0;
+}
+.navbar-nav {
+	margin-left:0;
+}
+}
+@media (max-width: 992px){
+.usersidebar{
+	margin-top: 0;
+}
