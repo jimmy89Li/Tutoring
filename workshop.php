@@ -29,11 +29,11 @@ include"config.php"; ?>
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar">
+				<ul class="nav navbar-nav navbar nav-tabs">
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
 					  <ul class="dropdown-menu">
-						<li><a href="#">User Profile</a></li>
+						<li><a href="userprofil.php">User Profile</a></li>
 						<li><a href="#">Logout</a></li>
 					  </ul>
 					</li>

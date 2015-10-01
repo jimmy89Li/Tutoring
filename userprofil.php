@@ -27,11 +27,11 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar">
-					<li class="dropdown">
+				<ul class="nav navbar-nav navbar nav-tabs">
+					<li class="dropdown active" role="presentation">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
 					  <ul class="dropdown-menu">
-						<li><a href="userprofil.php">User Profile</a></li>
+						<li role="presentation" class="active"><a href="userprofil.php">User Profile</a></li>
 						<li><a href="#">Logout</a></li>
 					  </ul>
 					</li>
@@ -43,7 +43,7 @@
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right nav-tabs">
-				<li role="presentation" class="active"><a href="home.php">Home</a></li>
+				<li role="presentation"><a href="home.php">Home</a></li>
 				<li><a href="workshops.php">Workshops</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
