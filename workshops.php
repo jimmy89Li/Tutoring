@@ -70,7 +70,7 @@
 						Add workshop
 					</button>
 
-					<!-- Modal -->
+					<!-- Create Workshop Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					  <div class="modal-dialog" role="document">
 						<div class="modal-content">
@@ -79,8 +79,8 @@
 							<h4 class="modal-title" id="myModalLabel">Create workshop</h4>
 						  </div>
 						  <div class="modal-body">
-						  <!-- Workshop Form -->
-							<form class="form-horizontal" action="" method="post">
+						  <!-- Create Workshop Form -->
+							<form class="form-horizontal" action="regprocess.php" method="post">
 								<fieldset>
 
 									<div class="form-group">
@@ -121,7 +121,7 @@
 									<div class="form-group">
 									  <label class="col-md-3 control-label" for="description">Description</label>
 										<div class="col-md-9">
-										  <textarea class="form-control" id="description" name="message" placeholder="Write description here..." rows="5"></textarea>
+										  <textarea class="form-control" id="description" name="description" placeholder="Write description here..." rows="5"></textarea>
 										</div>
 									</div>
 								  
