@@ -65,6 +65,12 @@ header{
 .sidebar{
 	min-height:520px;
 }
+.usersidebar {
+	margin-top: 63px;
+}
+ul.left {
+	padding: 0;
+}
 .footer {
     position: absolute;
     width: 100%;
@@ -82,6 +88,9 @@ header{
 width:100%;
 height:auto;
 }
+.userimg {
+	max-width: 200px;
+}
 /* Workshop Creating Form */
 .modal-title {
     text-align: center;
@@ -92,6 +101,7 @@ button.btn.btn-default.btn-lg {
     padding: 1px 10px;
     border: 1px solid silver;
 }
+.alert h4{margin:0}
 
 
 /* Media Queries */
@@ -120,4 +130,8 @@ button.btn.btn-default.btn-lg {
 .navbar-nav {
 	margin-left:0;
 }
+}
+@media (max-width: 992px){
+.usersidebar{
+	margin-top: 0;
 }

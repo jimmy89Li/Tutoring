@@ -6,7 +6,8 @@
 <link href="style.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 <meta charset="UTF-8">
-<?php include ('config.php'); ?>
+<?php
+include"config.php"; ?>
 </head>
 <body>
 <div class="container">
@@ -28,7 +29,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar navbar-tabs">
+				<ul class="nav navbar-nav navbar nav-tabs">
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
 					  <ul class="dropdown-menu">
@@ -65,11 +66,46 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">All our upcoming workshops:</div>
 				<div class="panel-body">
-				<p>You can also add a workshop of your own: 
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-						Add workshop
-					</button>
+					<?php 
+						$workshopname = $_POST['workshopname'];
+						$datetime = $_POST['datetime'];
+						$location = $_POST['location'];
+						$category = $_POST['category'];
+						$tutorname = $_POST['tutorname'];
+						$description = $_POST['description'];
+
+						if(!empty($workshopname) and !empty ($datetime) and !empty($location) and !empty($category) and !empty($tutorname) and !empty($description)){
+							$insert = 'INSERT into workshops(workshopname, datetime, location, category, tutorname, description) VALUES("'.$workshopname.'", "'.$datetime.'", "'.$location.'", "'.$category.'", "'.$tutorname.'", "'.$description.'")';
+							if(mysql_query($insert)){
+							echo '
+							<div class="alert alert-success" role="alert">
+								<h4>Your workshop has been created! 
+									<!-- Button trigger modal -->
+										<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+											Add a new workshop
+										</button>
+								</h4>
+							</div>';
+							}
+						}
+						else{
+							echo ('
+								<div class="alert alert-danger" role="alert">								
+									<h4>Please fill all fields! 
+										<!-- Button trigger modal -->
+											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+												Add workshop
+											</button>
+									</h4>
+								</div>');
+						}
+						
+								
+
+						
+
+					?>
+					
 
 					<!-- Create Workshop Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -140,7 +176,7 @@
 					<?php
 						$sql =  mysql_query("SELECT * FROM workshops ORDER BY datetime asc");
 						
-						while($row = mysql_fetch_array($sql, MYSQL_ASSOC)){
+						while($row = mysql_fetch_assoc($sql)){
 						echo('<div class="row">
 							<div class="col-xs-4 col-md-5 col-lg-4">
 								<img src="img/placeholder.jpg" alt="Image" />
@@ -157,6 +193,7 @@
 						</br>
 						');
 						}
+						mysql_close($connect);
 					?>
 				</div>
 			</div>
