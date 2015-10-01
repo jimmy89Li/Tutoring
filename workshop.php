@@ -99,11 +99,6 @@ include"config.php"; ?>
 									</h4>
 								</div>');
 						}
-						
-								
-
-						
-
 					?>
 					
 
@@ -179,7 +174,7 @@ include"config.php"; ?>
 						while($row = mysql_fetch_assoc($sql)){
 						echo('<div class="row">
 							<div class="col-xs-4 col-md-5 col-lg-4">
-								<img src="img/placeholder.jpg" alt="Image" />
+								<img src="img/workshop.jpg" alt="Image" />
 							</div>
 							<div class="col-xs-8 col-md-7 col-lg-8">
 								<h3>'.$row["workshopname"].'</h3>
