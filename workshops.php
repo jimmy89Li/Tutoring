@@ -11,7 +11,7 @@
 <div class="container">
 <header>
 <div class="slider">
-		<a href="#">
+		<a href="home.php">
 			<img class="logo img-circle" src="img/logocirkel50.png" alt="logo" />
 		</a>
 </div>
