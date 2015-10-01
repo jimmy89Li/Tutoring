@@ -6,6 +6,7 @@
 <link href="style.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 <meta charset="UTF-8">
+<?php include ('config.php'); ?>
 </head>
 <body>
 <div class="container">
@@ -93,7 +94,7 @@
 									<div class="form-group">
 									  <label class="col-md-3 control-label" for="datetime">Date & time:</label>
 										<div class="col-md-9">
-										  <input id="email" name="datetime" type="datetime" placeholder="Date & time" class="form-control">
+										  <input id="email" name="datetime" type="datetime-local" placeholder="Date & time" class="form-control">
 										</div>
 									</div>
 
@@ -136,76 +137,27 @@
 						</div>
 					  </div>
 					</div>
-					<div class="row">
-						<div class="col-xs-4 col-md-5 col-lg-4">
-							<img src="img/placeholder.jpg" alt="Image" />
+					<?php
+						$sql =  mysql_query("SELECT * FROM workshops ORDER BY datetime asc");
+						
+						while($row = mysql_fetch_array($sql, MYSQL_ASSOC)){
+						echo('<div class="row">
+							<div class="col-xs-4 col-md-5 col-lg-4">
+								<img src="img/placeholder.jpg" alt="Image" />
+							</div>
+							<div class="col-xs-8 col-md-7 col-lg-8">
+								<h3>'.$row["workshopname"].'</h3>
+								<p>Date: '.$row["datetime"].'</p>
+								<p>Location: '.$row["location"].'</p>
+								<p>Category: '.$row["category"].'</p>
+								<p>Tutor: '.$row["tutorname"].'</p>
+								<p>Decription: '.$row["description"].'</p>
+							</div>
 						</div>
-						<div class="col-xs-8 col-md-7 col-lg-8">
-							<h3>PHP Introduction Workshop</h3>
-							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
-							<p>Location: MMD Building 8, Room 25</p>
-							<p>Category: PHP</p>
-							<p>Tutor: John Doe</p>
-							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-					</div>
-					</br>
-					<div class="row">
-						<div class="col-xs-4 col-md-5 col-lg-4">
-							<img src="img/placeholder.jpg" alt="Image" />
-						</div>
-						<div class="col-xs-8 col-md-7 col-lg-8">
-							<h3>PHP Introduction Workshop</h3>
-							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
-							<p>Location: MMD Building 8, Room 25</p>
-							<p>Category: PHP</p>
-							<p>Tutor: John Doe</p>
-							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-					</div>
-					</br>
-					<div class="row">
-						<div class="col-xs-4 col-md-5 col-lg-4">
-							<img src="img/placeholder.jpg" alt="Image" />
-						</div>
-						<div class="col-xs-8 col-md-7 col-lg-8">
-							<h3>PHP Introduction Workshop</h3>
-							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
-							<p>Location: MMD Building 8, Room 25</p>
-							<p>Category: PHP</p>
-							<p>Tutor: John Doe</p>
-							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-					</div>
-					</br>
-					<div class="row">
-						<div class="col-xs-4 col-md-5 col-lg-4">
-							<img src="img/placeholder.jpg" alt="Image" />
-						</div>
-						<div class="col-xs-8 col-md-7 col-lg-8">
-							<h3>PHP Introduction Workshop</h3>
-							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
-							<p>Location: MMD Building 8, Room 25</p>
-							<p>Category: PHP</p>
-							<p>Tutor: John Doe</p>
-							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-					</div>
-					</br>
-					<div class="row">
-						<div class="col-xs-4 col-md-5 col-lg-4">
-							<img src="img/placeholder.jpg" alt="Image" />
-						</div>
-						<div class="col-xs-8 col-md-7 col-lg-8">
-							<h3>PHP Introduction Workshop</h3>
-							<p>Date: Monday, 1st of Juyl 2016 @ 12:00</p>
-							<p>Location: MMD Building 8, Room 25</p>
-							<p>Category: PHP</p>
-							<p>Tutor: John Doe</p>
-							<p>Decription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-					</div>
-					</br>
+						</br>
+						');
+						}
+					?>
 				</div>
 			</div>
   </div>
