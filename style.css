@@ -65,12 +65,15 @@ header{
 .sidebar{
 	min-height:520px;
 }
+<<<<<<< HEAD
 .usersidebar {
 	margin-top: 63px;
 }
 ul.left {
 	padding: 0;
 }
+=======
+>>>>>>> master
 .footer {
     position: absolute;
     width: 100%;
@@ -88,9 +91,12 @@ ul.left {
 width:100%;
 height:auto;
 }
+<<<<<<< HEAD
 .userimg {
 	max-width: 200px;
 }
+=======
+>>>>>>> master
 /* Workshop Creating Form */
 .modal-title {
     text-align: center;
@@ -129,8 +135,11 @@ button.btn.btn-default.btn-lg {
 .navbar-nav {
 	margin-left:0;
 }
+<<<<<<< HEAD
 }
 @media (max-width: 992px){
 .usersidebar{
 	margin-top: 0;
+=======
+>>>>>>> master
 }

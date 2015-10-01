@@ -31,7 +31,11 @@
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
 					  <ul class="dropdown-menu">
+<<<<<<< HEAD
 						<li><a href="userprofil.php">User Profile</a></li>
+=======
+						<li><a href="#">User Profile</a></li>
+>>>>>>> master
 						<li><a href="#">Logout</a></li>
 					  </ul>
 					</li>
