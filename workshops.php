@@ -64,8 +64,78 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">All our upcoming workshops:</div>
 				<div class="panel-body">
-				<p>You can also add a workshop of your own: <button type="button" class="btn btn-default">Add workshop</button></p>
-				
+				<p>You can also add a workshop of your own: 
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+						Add workshop
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Create workshop</h4>
+						  </div>
+						  <div class="modal-body">
+						  <!-- Workshop Form -->
+							<form class="form-horizontal" action="" method="post">
+								<fieldset>
+
+									<div class="form-group">
+									  <label class="col-md-3 control-label" for="workshopname">Title</label>
+										<div class="col-md-9">
+										  <input id="name" name="workshopname" type="text" placeholder="Workshop name" class="form-control">
+										</div>
+									</div>
+								  
+									<div class="form-group">
+									  <label class="col-md-3 control-label" for="datetime">Date & time:</label>
+										<div class="col-md-9">
+										  <input id="email" name="datetime" type="datetime" placeholder="Date & time" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+									  <label class="col-md-3 control-label" for="location">Location</label>
+										<div class="col-md-9">
+										  <input id="email" name="location" type="text" placeholder="Location" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+									  <label class="col-md-3 control-label" for="category">Category</label>
+										<div class="col-md-9">
+										  <input id="email" name="category" type="text" placeholder="Category" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+									  <label class="col-md-3 control-label" for="tutorname">Tutor</label>
+										<div class="col-md-9">
+										  <input id="email" name="tutorname" type="text" placeholder="Tutor" class="form-control">
+										</div>
+									</div>
+								
+									<div class="form-group">
+									  <label class="col-md-3 control-label" for="description">Description</label>
+										<div class="col-md-9">
+										  <textarea class="form-control" id="description" name="message" placeholder="Write description here..." rows="5"></textarea>
+										</div>
+									</div>
+								  
+									<div class="form-group">
+									  <div class="col-md-12 text-right">
+										<button type="submit" class="btn btn-default btn-lg">Create</button>
+									  </div>
+									</div>
+								</fieldset>
+							</form>
+						  </div>
+						</div>
+					  </div>
+					</div>
 					<div class="row">
 						<div class="col-xs-4 col-md-5 col-lg-4">
 							<img src="img/placeholder.jpg" alt="Image" />
