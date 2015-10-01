@@ -6,6 +6,8 @@
 <link href="style.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 <meta charset="UTF-8">
+<?php
+include"config.php"; ?>
 </head>
 <body>
 <div class="container">
@@ -64,11 +66,42 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">All our upcoming workshops:</div>
 				<div class="panel-body">
-				<p>You can also add a workshop of your own: 
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-						Add workshop
-					</button>
+					<?php 
+						$workshopname = $_POST['workshopname'];
+						$datetime = $_POST['datetime'];
+						$location = $_POST['location'];
+						$category = $_POST['category'];
+						$tutorname = $_POST['tutorname'];
+						$description = $_POST['description'];
+
+						if(!empty($workshopname) and !empty ($datetime) and !empty($location) and !empty($category) and !empty($tutorname) and !empty($description)){
+							$insert = 'INSERT into workshops(workshopname, datetime, location, category, tutorname, description) VALUES("'.$workshopname.'", "'.$datetime.'", "'.$location.'", "'.$category.'", "'.$tutorname.'", "'.$description.'")';
+							echo '
+							<div class="alert alert-success" role="alert">
+								<p>Your workshop has been created! 
+									<!-- Button trigger modal -->
+										<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+											Add a new workshop
+										</button>
+								</p>
+							</div>';
+						}
+						else{
+							echo '
+							<div class="alert alert-danger" role="alert">
+								<h4>Please fill all fields!
+									<!-- Button trigger modal -->
+										<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+											Add a workshop
+										</button>
+								</h4>
+							</div>';
+						}
+						
+						mysql_close($connect);
+
+					?>
+					
 
 					<!-- Create Workshop Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
