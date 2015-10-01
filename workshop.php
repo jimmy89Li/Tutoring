@@ -76,28 +76,32 @@ include"config.php"; ?>
 
 						if(!empty($workshopname) and !empty ($datetime) and !empty($location) and !empty($category) and !empty($tutorname) and !empty($description)){
 							$insert = 'INSERT into workshops(workshopname, datetime, location, category, tutorname, description) VALUES("'.$workshopname.'", "'.$datetime.'", "'.$location.'", "'.$category.'", "'.$tutorname.'", "'.$description.'")';
+							if(mysql_query($insert)){
 							echo '
 							<div class="alert alert-success" role="alert">
-								<p>Your workshop has been created! 
+								<h4>Your workshop has been created! 
 									<!-- Button trigger modal -->
 										<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
 											Add a new workshop
 										</button>
-								</p>
-							</div>';
-						}
-						else{
-							echo '
-							<div class="alert alert-danger" role="alert">
-								<h4>Please fill all fields!
-									<!-- Button trigger modal -->
-										<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-											Add a workshop
-										</button>
 								</h4>
 							</div>';
+							}
+						}
+						else{
+							echo ('
+								<div class="alert alert-danger" role="alert">								
+									<h4>Please fill all fields! 
+										<!-- Button trigger modal -->
+											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+												Add workshop
+											</button>
+									</h4>
+								</div>');
 						}
 						
+								
+
 						mysql_close($connect);
 
 					?>
