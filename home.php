@@ -11,7 +11,7 @@
 <div class="container">
 <header>
 <div class="slider">
-		<a href="#">
+		<a href="home.php">
 			<img class="logo img-circle" src="img/logocirkel50.png" alt="logo" />
 		</a>
 </div>
@@ -42,8 +42,8 @@
 				</div>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="home.php">Home</a></li>
+			<ul class="nav navbar-nav navbar-right nav-tabs">
+				<li role="presentation" class="active"><a href="home.php">Home</a></li>
 				<li><a href="workshops.php">Workshops</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
