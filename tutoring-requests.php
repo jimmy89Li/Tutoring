@@ -56,8 +56,8 @@ if(!isset($_SESSION['sess_user'])){
 				<li role="presentation" class="dropdown active">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li role="presentation" class="active"><a href="tutoring-offers.php">Offers</a></li>
-						<li><a href="tutoring-requests.php">Requests</a></li>
+						<li><a href="tutoring-offers.php">Offers</a></li>
+						<li role="presentation" class="active"><a href="tutoring-requests.php">Requests</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -72,10 +72,10 @@ if(!isset($_SESSION['sess_user'])){
 			<div class="panel panel-default">
 				<div class="panel-heading">Available tutoring offers:</div>
 				<div class="panel-body">
-				<p>You can also add a tutoring offer of your own: 
+				<p>You can also add a tutoring request of your own: 
 					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-						Add offer
+						Add request
 					</button>
 
 					<!-- Create Workshop Modal -->
@@ -84,7 +84,7 @@ if(!isset($_SESSION['sess_user'])){
 						<div class="modal-content">
 						  <div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Add offer</h4>
+							<h4 class="modal-title" id="myModalLabel">Add request</h4>
 						  </div>
 						  <div class="modal-body">
 						  <!-- Create Workshop Form -->
@@ -120,7 +120,7 @@ if(!isset($_SESSION['sess_user'])){
 									</div>
 
 									<div class="form-group">
-									  <label class="col-md-3 control-label" for="tutorname">Tutor</label>
+									  <label class="col-md-3 control-label" for="tutorname">Name</label>
 										<div class="col-md-9">
 										  <input id="email" name="tutorname" type="text" placeholder="Tutor" class="form-control">
 										</div>
@@ -153,10 +153,10 @@ if(!isset($_SESSION['sess_user'])){
 								<img src="img/ed.jpg" alt="Image" class="userimg"/>
 							</div>
 							<div class="col-xs-8 col-md-7 col-lg-8">
-								<h3>'.$row["workshopname"].'</h3>
+								<h3>Requesting '.$row["workshopname"].'</h3>
 								<p>Location: at school</p>
 								<p>Category: '.$row["category"].'</p>
-								<p>Tutor: '.$row["tutorname"].'</p>
+								<p>Request by: '.$row["tutorname"].'</p>
 								<p>Decription: '.$row["description"].'</p>
 							</div>
 							<button type="button" class="btn btn-default btn-lg">Contact</button>

@@ -58,7 +58,7 @@ include"config.php"; ?>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="tutoring-offers.php">Offers</a></li>
-						<li><a href="#">Requests</a></li>
+						<li><a href="tutoring-requests.php">Requests</a></li>
 					</ul>
 				</li>
 			</ul>
