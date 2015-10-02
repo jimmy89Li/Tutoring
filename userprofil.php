@@ -78,7 +78,7 @@ if(!isset($_SESSION['sess_user'])){
 						</div>
 						<div class="col-xs-8 col-md-7 col-lg-6">
 							<h3>John Doe</h3>
-							<p>User name: joh_do1578</p>
+							<p>User name: <?php if(isset($_SESSION['sess_user'])) echo $_SESSION['sess_user']; ?></p>
 							<button type="button" class="btn btn-default btn-lg">Change username</button>
 							</br>
 							</br>
