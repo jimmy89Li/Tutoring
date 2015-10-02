@@ -56,7 +56,7 @@ if(!isset($_SESSION['sess_user'])){
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Offers</a></li>
+						<li><a href="tutoring-offers.php">Offers</a></li>
 						<li><a href="#">Requests</a></li>
 					</ul>
 				</li>
