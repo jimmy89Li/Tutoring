@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="indexpage/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+	@font-face {
+    font-family: HelveticaNeue-Medium;
+    src: url(fonts/HelveticaNeue-Medium.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-UltraLight;
+    src: url(fonts/HelveticaNeue-UltraLight.otf);
+}
+
+body{
+  background: url(images/people.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+font-family: 'HelveticaNeue-Medium', sans-serif;
+color: white;
+}
+
+.text{
+  width:400px;
+  margin: 0px auto;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'HelveticaNeue-Ultralight', sans-serif;
+}
+
+#login{
+ /*background-color: rgba(0, 160, 122, 0.4) !important;*/
+ font-family: 'HelveticaNeue-Ultralight', sans-serif;
+
+ height: 50%;
+ width: 100%;
+}
+
+.sign-in{
+  width: 300px;
+  padding-top: 10px;
+  margin: 0px auto;
+  text-align: left;
+  line-height: 1.8em;
+  font-family: 'HelveticaNeue-Ultralight', sans-serif;
+}
+
+ #userid{
+  width: 80%;
+  opacity: 0.6;
+   font-family: 'HelveticaNeue-Ultralight', sans-serif;
+   font-size: 1.4em;
+}
+
+#passwrd{
+width: 80%;
+  opacity: 0.6;
+   font-family: 'HelveticaNeue-Ultralight', sans-serif;
+   font-size: 1.4em;
+}
+
+#submit{
+  font-family: 'HelveticaNeue-Ultralight', sans-serif;
+  font-size: 1.2em;
+}
+
+#submit-signup{
+  font-family: 'HelveticaNeue-Ultralight', sans-serif;
+  font-size: 1.5em;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #1cab8b;
+  color: #ffffff;
+  border:none;
+  margin-top: 10px;
+}
+
+#logo{
+  width: 300px;
+  margin: 0px auto;
+  margin-left: 39%;
+}
+
+	</style>
+  </head>
+  <body>
+
+<div class="text">
+  <h1>Welcome to the</h1>
+</div>
+
+<div id="logo">
+  <img src="images/logocirkel.png"> 
+</div>
+ 
+
+
+<div id="login">
+    <div class="text">
+      <h2>To enter please login</h2>
+    </div>
+    <div id="formHolder">
+<form class="sign-in" id="loginForm" method="post" action="">
+
+      <div class="form-group-one">
+          <label id="msg"></label>
+      <label class="sr-only" for="exampleInputEmail3">Email address</label>
+      <input type="email" class="form-control" id="userid" placeholder="Enter email">
+      </div>
+      <div class="form-group-two">
+      <label class="sr-only" for="exampleInputPassword3">Password</label>
+      <input type="password" class="form-control" id="passwrd" placeholder="Password">
+      </div>
+      <div class="checkbox">
+      <label>
+        <input type="checkbox">Remember me</label>
+      </div>
+      <button type="button" id="loginButton" class="btn btn-default" id="submit" onclick="login()">Sign in</button></br>
+      <button type="button" class="btn btn-default" id="submit-signup" onclick="signup()">Sign up</button>
+
+</form>
+</div>
+</div>
+
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="indexpage/js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
