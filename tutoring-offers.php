@@ -170,7 +170,7 @@ if(!isset($_SESSION['sess_user'])){
   </div>
   <div class="col-xs-12 col-md-4 sidebar">
 		<div class="panel panel-default">
-			<div class="panel-heading">Filter the workshops:</div>
+			<div class="panel-heading">Filter the offers:</div>
 			<div class="panel-body">
 				<ul class="list-group">
 					<li class="list-group-item">Category:

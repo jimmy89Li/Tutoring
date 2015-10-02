@@ -170,7 +170,7 @@ if(!isset($_SESSION['sess_user'])){
   </div>
   <div class="col-xs-12 col-md-4 sidebar">
 		<div class="panel panel-default">
-			<div class="panel-heading">Filter the workshops:</div>
+			<div class="panel-heading">Filter the requests:</div>
 			<div class="panel-body">
 				<ul class="list-group">
 					<li class="list-group-item">Category:
@@ -195,7 +195,7 @@ if(!isset($_SESSION['sess_user'])){
 							</label>
 						</div>
 					</li>
-					<li class="list-group-item">Tutor:
+					<li class="list-group-item">Name:
 						<div class="checkbox">
 							<label><input type="checkbox">Ana</label>
 						</div>
