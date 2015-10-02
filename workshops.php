@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +31,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar navbar-tabs">
 					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if(isset($_SESSION['sess_user'])) echo $_SESSION['sess_user']; ?><span class="caret"></span></a>
 					  <ul class="dropdown-menu">
 						<li><a href="userprofil.php">User Profile</a></li>
 						<li><a href="#">Logout</a></li>
