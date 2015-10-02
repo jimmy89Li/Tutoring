@@ -1,3 +1,10 @@
+<?php
+ob_start();
+session_start();
+if(!isset($_SESSION['sess_user'])){
+    header("location:index.html");
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +13,7 @@
 <link href="style.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 <meta charset="UTF-8">
+<?php include"config.php"; ?>
 </head>
 <body>
 <div class="container">
@@ -29,10 +37,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar nav-tabs">
 					<li class="dropdown active" role="presentation">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if(isset($_SESSION['sess_user'])) echo $_SESSION['sess_user']; ?><span class="caret"></span></a>
 					  <ul class="dropdown-menu">
 						<li role="presentation" class="active"><a href="userprofil.php">User Profile</a></li>
-						<li><a href="#">Logout</a></li>
+						<li><a href="logout.php">Logout</a></li>
 					  </ul>
 					</li>
 				</ul>
