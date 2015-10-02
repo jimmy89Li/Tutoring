@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.14
+-- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 02, 2015 at 09:54 AM
--- Server version: 5.6.26
--- PHP Version: 5.6.12
+-- Host: localhost
+-- Generation Time: Oct 02, 2015 at 10:03 AM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,10 +14,10 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Database: `tutoring_portal`
+-- Database: `tutor`
 --
 
 -- --------------------------------------------------------
@@ -68,21 +68,21 @@ INSERT INTO `users` (`uid`, `picture`, `name`, `language`, `whyhere`, `skills`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `workshops`
+-- Table structure for table `workshop`
 --
 
-CREATE TABLE IF NOT EXISTS `workshops` (
-  `workshopname` text NOT NULL,
-  `datetime` datetime NOT NULL,
-  `location` text NOT NULL,
-  `category` text NOT NULL,
-  `tutorname` text NOT NULL,
-  `description` text NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `workshop` (
+`wid` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `datetime` varchar(100) NOT NULL,
+  `location` varchar(100) NOT NULL,
+  `category` varchar(100) NOT NULL,
+  `tutor` varchar(100) NOT NULL,
+  `description` varchar(250) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
--- Dumping data for table `workshops`
+-- Dumping data for table `workshop`
 --
 
 INSERT INTO `workshops` (`workshopname`, `datetime`, `location`, `category`, `tutorname`, `description`, `id`) VALUES
