@@ -44,7 +44,7 @@
       <label>
         <input type="checkbox">Remember me</label>
       </div>
-      <button type="button" class="btn btn-default" id="submit" onclick="login()">Sign in</button></br>
+      <a href="home.php"><button type="button" class="btn btn-default" id="submit" onclick="login()">Sign in</button></a></br>
       <button type="button" class="btn btn-default" id="submit-signup" onclick="login()">Sign up</button>
 
 </form>
