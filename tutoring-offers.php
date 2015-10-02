@@ -13,8 +13,7 @@ if(!isset($_SESSION['sess_user'])){
 <link href="style.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 <meta charset="UTF-8">
-<?php
-include"config.php"; ?>
+<?php include ('config.php'); ?>
 </head>
 <body>
 <div class="container">
@@ -36,7 +35,7 @@ include"config.php"; ?>
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar nav-tabs">
+				<ul class="nav navbar-nav navbar navbar-tabs">
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if(isset($_SESSION['sess_user'])) echo $_SESSION['sess_user']; ?><span class="caret"></span></a>
 					  <ul class="dropdown-menu">
@@ -53,11 +52,11 @@ include"config.php"; ?>
 			</form>
 			<ul class="nav navbar-nav navbar-right nav-tabs">
 				<li><a href="home.php">Home</a></li>
-				<li role="presentation" class="active"><a href="workshops.php">Workshops</a></li>
-				<li class="dropdown">
+				<li><a href="workshops.php">Workshops</a></li>
+				<li role="presentation" class="dropdown active">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutoring<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="tutoring-offers.php">Offers</a></li>
+						<li role="presentation" class="active"><a href="tutoring-offers.php">Offers</a></li>
 						<li><a href="#">Requests</a></li>
 					</ul>
 				</li>
@@ -71,43 +70,13 @@ include"config.php"; ?>
 <div class="row">
   <div class="col-xs-12 col-md-8">
 			<div class="panel panel-default">
-				<div class="panel-heading">All our upcoming workshops:</div>
+				<div class="panel-heading">Available tutoring offers:</div>
 				<div class="panel-body">
-					<?php 
-						$workshopname = $_POST['workshopname'];
-						$datetime = $_POST['datetime'];
-						$location = $_POST['location'];
-						$category = $_POST['category'];
-						$tutorname = $_POST['tutorname'];
-						$description = $_POST['description'];
-
-						if(!empty($workshopname) and !empty ($datetime) and !empty($location) and !empty($category) and !empty($tutorname) and !empty($description)){
-							$insert = 'INSERT into workshops(workshopname, datetime, location, category, tutorname, description) VALUES("'.$workshopname.'", "'.$datetime.'", "'.$location.'", "'.$category.'", "'.$tutorname.'", "'.$description.'")';
-							if(mysql_query($insert)){
-							echo '
-							<div class="alert alert-success" role="alert">
-								<h4>Your workshop has been created! 
-									<!-- Button trigger modal -->
-										<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-											Add a new workshop
-										</button>
-								</h4>
-							</div>';
-							}
-						}
-						else{
-							echo ('
-								<div class="alert alert-danger" role="alert">								
-									<h4>Please fill all fields! 
-										<!-- Button trigger modal -->
-											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-												Add workshop
-											</button>
-									</h4>
-								</div>');
-						}
-					?>
-					
+				<p>You can also add a tutoring offer of your own: 
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+						Add offer
+					</button>
 
 					<!-- Create Workshop Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -115,7 +84,7 @@ include"config.php"; ?>
 						<div class="modal-content">
 						  <div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Create workshop</h4>
+							<h4 class="modal-title" id="myModalLabel">Add offer</h4>
 						  </div>
 						  <div class="modal-body">
 						  <!-- Create Workshop Form -->
@@ -166,7 +135,7 @@ include"config.php"; ?>
 								  
 									<div class="form-group">
 									  <div class="col-md-12 text-right">
-										<button type="submit" class="btn btn-default btn-lg">Create</button>
+										<button type="button" class="btn btn-default btn-lg">Create</button>
 									  </div>
 									</div>
 								</fieldset>
@@ -178,24 +147,23 @@ include"config.php"; ?>
 					<?php
 						$sql =  mysql_query("SELECT * FROM workshops ORDER BY datetime asc");
 						
-						while($row = mysql_fetch_assoc($sql)){
+						while($row = mysql_fetch_array($sql, MYSQL_ASSOC)){
 						echo('<div class="row">
 							<div class="col-xs-4 col-md-5 col-lg-4">
-								<img src="img/workshop.jpg" alt="Image" />
+								<img src="img/ed.jpg" alt="Image" class="userimg"/>
 							</div>
 							<div class="col-xs-8 col-md-7 col-lg-8">
 								<h3>'.$row["workshopname"].'</h3>
-								<p>Date: '.$row["datetime"].'</p>
-								<p>Location: '.$row["location"].'</p>
+								<p>Location: at school</p>
 								<p>Category: '.$row["category"].'</p>
 								<p>Tutor: '.$row["tutorname"].'</p>
 								<p>Decription: '.$row["description"].'</p>
 							</div>
+							<button type="button" class="btn btn-default btn-lg">Contact</button>
 						</div>
 						</br>
 						');
 						}
-						mysql_close($connect);
 					?>
 				</div>
 			</div>
