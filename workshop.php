@@ -35,7 +35,7 @@ include"config.php"; ?>
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if(isset($_SESSION['sess_user'])) echo $_SESSION['sess_user']; ?><span class="caret"></span></a>
 					  <ul class="dropdown-menu">
 						<li><a href="userprofil.php">User Profile</a></li>
-						<li><a href="#">Logout</a></li>
+						<li><a href="index.html">Logout</a></li>
 					  </ul>
 					</li>
 				</ul>
